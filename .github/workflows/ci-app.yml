@@ -21,6 +21,6 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.9e5c289d-8dac-46ca-8787-12c0e862ae9e }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN}}
       - name: lint
         run: make lint
